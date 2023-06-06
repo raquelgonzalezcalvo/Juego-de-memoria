@@ -11,7 +11,7 @@ main {
   align-items: center;
 }
 .section1 {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: $color-dark;
   padding: 0 10px 10px 10px;
   border-radius: 8px;
 }
@@ -32,7 +32,7 @@ button:hover {
   padding: 0 20px;
   width: 250px;
   height: auto;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: $color-dark;
 }
 .letters {
   border: 1px solid white;
@@ -44,4 +44,5 @@ button:hover {
 footer {
   opacity: 50%;
   text-align: center;
+  cursor: pointer;
 }
