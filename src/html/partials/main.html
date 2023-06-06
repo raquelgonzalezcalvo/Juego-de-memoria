@@ -1,40 +1,61 @@
-<main class="page__main">
-  <h2>Este es el starter kit de Adalab</h2>
-  <p>Lo usamos para aprender:</p>
-  <ul class="main__list">
-    <li>Sass</li>
-    <li>HTML partials</li>
-    <li>Gulp</li>
-    <li>y muchas cosas más</li>
-  </ul>
-  <p>Si quieres saber cúales son las rutas correctas para:</p>
-  <ul class="main__list">
-    <li>
-      una <code class="code">&lt;img /&gt;</code> mira el fichero
-      <code class="code">./src/html/partials/header.html</code>.
-    </li>
-    <li>
-      y para un <code class="code">background-image</code> mira el fichero
-      <code class="code">./src/html/scss/layout/_page.scss</code>.
-    </li>
-  </ul>
-  <p>
-    Si quieres saber cómo usar un partial HTML dentro de otro partial, busca en la carperta
-    <code class="code">./src/html/index.html</code> y
-    <code class="code">./src/html/partials/main.html</code>, y verás cómo estamos creando estos
-    enlaces:
-  </p>
-  <ul class="main__list">
-    <li>
-      <include
-        src="./link.html"
-        aClass="link__adalab"
-        text="Adalab"
-        url="https://adalab.es"
-      ></include>
-    </li>
-    <li>
-      <include src="./link.html" text="Más info del starter kit" url="./more-info.html"></include>
-    </li>
-  </ul>
+<main>
+  <section class="section1">
+    <h1>Juego de memoria</h1>
+    <table>
+      <tr>
+        <td><button id="0" onclick="uncover(0)" class="card"></button></td>
+        <td><button id="1" onclick="uncover(1)" class="card"></button></td>
+        <td><button id="2" onclick="uncover(2)" class="card"></button></td>
+        <td><button id="3" onclick="uncover(3)" class="card"></button></td>
+      </tr>
+      <tr>
+        <td><button id="4" onclick="uncover(4)" class="card"></button></td>
+        <td><button id="5" onclick="uncover(5)" class="card"></button></td>
+        <td><button id="6" onclick="uncover(6)" class="card"></button></td>
+        <td><button id="7" onclick="uncover(7)" class="card"></button></td>
+      </tr>
+      <tr>
+        <td><button id="8" onclick="uncover(8)" class="card"></button></td>
+        <td><button id="9" onclick="uncover(9)" class="card"></button></td>
+        <td>
+          <button id="10" onclick="uncover(10)" class="card"></button>
+        </td>
+        <td>
+          <button id="11" onclick="uncover(11)" class="card"></button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button id="12" onclick="uncover(12)" class="card"></button>
+        </td>
+        <td>
+          <button id="13" onclick="uncover(13)" class="card"></button>
+        </td>
+        <td>
+          <button id="14" onclick="uncover(14)" class="card"></button>
+        </td>
+        <td>
+          <button id="15" onclick="uncover(15)" class="card"></button>
+        </td>
+      </tr>
+    </table>
+  </section>
+  <section class="section2">
+    <h2 id="hits" class="estadisticas">Aciertos: 0</h2>
+    <h2 id="time" class="estadisticas">Tiempo: 30 segundos</h2>
+    <h2 id="move" class="estadisticas">Movimientos: 0</h2>
+    <!-- <button class="start">iniciar juego</button> -->
+  </section>
 </main>
+<footer>
+  <p>
+    Raquel González Calvo
+    <a
+      href="www.linkedin.com/in/raquel-gonzález-calvo-999bab272"
+      ><i class="fa-brands fa-linkedin"></i>
+    </a>
+  </p>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
