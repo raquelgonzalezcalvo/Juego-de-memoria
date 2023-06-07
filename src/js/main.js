@@ -18,7 +18,6 @@ let showTime = document.getElementById("time");
 //genera numeros aleatorios
 let numbers = [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8];
 numbers = numbers.sort(() => Math.random() - 0.5);
-// console.log(numbers);
 
 //funciones
 function contarTiempo() {
@@ -47,7 +46,6 @@ function uncover(id) {
     time = true;
   }
   uncoveredCards++;
-  //   console.log(uncoveredCards);
 
   if (uncoveredCards === 1) {
     //mostrar primer número
