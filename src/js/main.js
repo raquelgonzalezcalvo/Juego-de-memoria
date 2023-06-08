@@ -20,29 +20,29 @@ let numbers = [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8];
 numbers = numbers.sort(() => Math.random() - 0.5);
 
 //funciones
-function contarTiempo() {
+function countTime() {
   regressiveTimeId = setInterval(() => {
     timer--;
     showTime.innerHTML = `Tiempo: ${timer} segundos`;
     if (timer === 0) {
       clearInterval(regressiveTimeId);
-      bloquearTarjetas();
+      blockCards();
     }
   }, 1000);
 }
 
-function bloquearTarjetas() {
+function blockCards() {
   for (let i = 0; i <= 15; i++) {
-    let tarjetaBloqueada = document.getElementById(i);
-    tarjetaBloqueada.innerHTML = numbers[i];
-    tarjetaBloqueada.disabled = true;
+    let blockedCards = document.getElementById(i);
+    blockedCards.innerHTML = numbers[i];
+    blockedCards.disabled = true;
   }
 }
 
 //funcion principal
 function uncover(id) {
   if (time === false) {
-    contarTiempo();
+    countTime();
     time = true;
   }
   uncoveredCards++;
