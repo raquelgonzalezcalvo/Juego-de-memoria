@@ -18,52 +18,136 @@
 
   <body>
     <div class="page">
-      <main>
-        <section class="section1">
-          <h1>Juego de memoria</h1>
+      <main class="main">
+        <section class="main__section1">
+          <h1 class="main__section1__title">Juego de memoria</h1>
           <table>
             <tr>
-              <td><button id="0" onclick="uncover(0)" class="card"></button></td>
-              <td><button id="1" onclick="uncover(1)" class="card"></button></td>
-              <td><button id="2" onclick="uncover(2)" class="card"></button></td>
-              <td><button id="3" onclick="uncover(3)" class="card"></button></td>
+              <td>
+                <button
+                  id="0"
+                  onclick="uncover(0)"
+                  class="main__section1__card"
+                ></button>
+              </td>
+              <td>
+                <button
+                  id="1"
+                  onclick="uncover(1)"
+                  class="main__section1__card"
+                ></button>
+              </td>
+              <td>
+                <button
+                  id="2"
+                  onclick="uncover(2)"
+                  class="main__section1__card"
+                ></button>
+              </td>
+              <td>
+                <button
+                  id="3"
+                  onclick="uncover(3)"
+                  class="main__section1__card"
+                ></button>
+              </td>
             </tr>
             <tr>
-              <td><button id="4" onclick="uncover(4)" class="card"></button></td>
-              <td><button id="5" onclick="uncover(5)" class="card"></button></td>
-              <td><button id="6" onclick="uncover(6)" class="card"></button></td>
-              <td><button id="7" onclick="uncover(7)" class="card"></button></td>
+              <td>
+                <button
+                  id="4"
+                  onclick="uncover(4)"
+                  class="main__section1__card"
+                ></button>
+              </td>
+              <td>
+                <button
+                  id="5"
+                  onclick="uncover(5)"
+                  class="main__section1__card"
+                ></button>
+              </td>
+              <td>
+                <button
+                  id="6"
+                  onclick="uncover(6)"
+                  class="main__section1__card"
+                ></button>
+              </td>
+              <td>
+                <button
+                  id="7"
+                  onclick="uncover(7)"
+                  class="main__section1__card"
+                ></button>
+              </td>
             </tr>
             <tr>
-              <td><button id="8" onclick="uncover(8)" class="card"></button></td>
-              <td><button id="9" onclick="uncover(9)" class="card"></button></td>
               <td>
-                <button id="10" onclick="uncover(10)" class="card"></button>
+                <button
+                  id="8"
+                  onclick="uncover(8)"
+                  class="main__section1__card"
+                ></button>
               </td>
               <td>
-                <button id="11" onclick="uncover(11)" class="card"></button>
+                <button
+                  id="9"
+                  onclick="uncover(9)"
+                  class="main__section1__card"
+                ></button>
+              </td>
+              <td>
+                <button
+                  id="10"
+                  onclick="uncover(10)"
+                  class="main__section1__card"
+                ></button>
+              </td>
+              <td>
+                <button
+                  id="11"
+                  onclick="uncover(11)"
+                  class="main__section1__card"
+                ></button>
               </td>
             </tr>
             <tr>
               <td>
-                <button id="12" onclick="uncover(12)" class="card"></button>
+                <button
+                  id="12"
+                  onclick="uncover(12)"
+                  class="main__section1__card"
+                ></button>
               </td>
               <td>
-                <button id="13" onclick="uncover(13)" class="card"></button>
+                <button
+                  id="13"
+                  onclick="uncover(13)"
+                  class="main__section1__card"
+                ></button>
               </td>
               <td>
-                <button id="14" onclick="uncover(14)" class="card"></button>
+                <button
+                  id="14"
+                  onclick="uncover(14)"
+                  class="main__section1__card"
+                ></button>
               </td>
               <td>
-                <button id="15" onclick="uncover(15)" class="card"></button>
+                <button
+                  id="15"
+                  onclick="uncover(15)"
+                  class="main__section1__card"
+                ></button>
               </td>
             </tr>
           </table>
         </section>
-        <section class="section2">
-          <h2 id="hits" class="letters">Aciertos: 0</h2>
-          <h2 id="time" class="letters">Tiempo: 30 segundos</h2>
-          <h2 id="move" class="letters">Movimientos: 0</h2>
+        <section class="main__section2">
+          <h2 id="hits" class="main__section2__letters">Aciertos: 0</h2>
+          <h2 id="time" class="main__section2__letters">Tiempo: 30 segundos</h2>
+          <h2 id="move" class="main__section2__letters">Movimientos: 0</h2>
         </section>
       </main>
       <footer>
@@ -74,9 +158,6 @@
           </a>
         </p>
       </footer>
-      <script src="app.js"></script>
-      </body>
-      </html>
 
     </div>
     <script src="./assets/js/main.js"></script>
